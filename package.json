@@ -1,0 +1,12 @@
+{
+  "name": "quiz-arena",
+  "version": "1.0.0",
+  "description": "Real-time multiplayer quiz game for friends. Zero npm dependencies.",
+  "main": "server.js",
+  "private": true,
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "test": "node test/simulate.js"
+  }
+}

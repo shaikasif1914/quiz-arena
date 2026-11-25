@@ -1,0 +1,19 @@
+# One-click deploy on Render (https://render.com). A persistent disk keeps rooms across restarts.
+services:
+  - type: web
+    name: quiz-arena
+    runtime: docker
+    plan: starter
+    numInstances: 1        # must stay at 1: live connections and timers are held in memory
+    healthCheckPath: /healthz
+    envVars:
+      - key: DATABASE_PATH
+        value: /data/quiz.db
+      - key: TRUST_PROXY
+        value: "1"
+      - key: ANTHROPIC_API_KEY
+        sync: false        # optional: paste your key in the Render dashboard
+    disk:
+      name: quiz-data
+      mountPath: /data
+      sizeGB: 1

@@ -1,0 +1,16 @@
+[
+  {
+    "category": "telugu",
+    "difficulty": "easy",
+    "question": "Which actor played Pushpa Raj in Pushpa: The Rise?",
+    "answer": "Allu Arjun",
+    "wrong": ["Ram Charan", "Prabhas", "Mahesh Babu"]
+  },
+  {
+    "category": "ml",
+    "difficulty": "medium",
+    "question": "Which metric measures the share of predictions a model got right?",
+    "answer": "Accuracy",
+    "wrong": ["Latency", "Bandwidth", "Entropy"]
+  }
+]
